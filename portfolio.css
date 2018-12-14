@@ -1,0 +1,99 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0; padding: 5rem 0; background: #3044c0;
+  font-family: 'Noto Serif TC', serif; font-weight: 900;
+}
+
+h1 {
+  position: absolute; top: -8.5rem; left: -0.5rem;
+  font-size: 5rem; color: #fff; font-weight: 900;
+}
+
+.text-center { text-align: center; }
+.button-cta {
+  transition: all ease-out .3s;
+  background: #3044c0; padding: 1.5rem 2rem; margin: 2rem 0; display: inline-block;
+  color: #f5f151; text-align: center; text-decoration: none; text-transform: uppercase;
+  font-size: 1.8rem;
+}
+.button-cta:hover { background: #e36152; }
+
+.container {
+  width: 100%; padding: 2.5rem 3rem; max-width: 100%; margin: 0 auto;
+  position: relative; border: solid 10px #e36152;
+}
+
+.portfolio-list {
+  display: flex; align-items: flex-start; flex-wrap: wrap;
+}
+
+.portfolio-list-item {
+  position: relative; width: 50%;
+}
+
+.portfolio-list-item-img-container {
+  overflow: hidden;
+}
+
+.portfolio-list-item-img {
+  transition: all ease-out 2s;
+  display: block; width: 100%; height: auto;
+}
+
+.portfolio-list-item-title {
+  position: absolute; right: 0; bottom: 1rem; left: 0;
+  text-align: center;
+}
+
+.portfolio-list-item-link {
+  transition: all ease-out .4s;
+  font-size: 2rem; font-weight: 900; color: #fff; text-decoration: none;
+  text-shadow: 1px 1px 1px #3044c0; opacity: 0;
+}
+
+.portfolio-list-item:hover .portfolio-list-item-link {
+  opacity: 1;
+}
+
+.portfolio-list-item:hover .portfolio-list-item-img {
+  transform: scale(1.1);
+}
+
+.portfolio-single {
+  min-height: 40rem;
+}
+
+.portfolio-single-title {
+  margin: 0 0 2rem;
+  font-size: 7rem; color: #f5f151; text-shadow: 2px 2px 7px #43ff8e; text-align: center;
+}
+
+.portfolio-single-title:first-letter {
+  color: #fff;
+}
+
+.portfolio-single-content {
+  margin: 1rem 4rem;
+  font-size: 2.5rem; color: #fff; text-align: center; text-shadow: 3px 2px 2px #333;
+}
+
+.portfolio-single-content::after {
+  content: '...';
+  font-size: 3rem; letter-spacing: 2rem; color: #fff;
+}
+
+
+.portfolio-single-img {
+  position: fixed; top: 0; left: 0; right 0; bottom: 0; width: 100%; height: auto; z-index: -1;
+}
+
+@media (min-width: 64rem) {
+  .container { width: 64rem; }
+  h1 { left: -2.5rem; }
+  .portfolio-list-item-link { font-size: 3.5rem; }
+}
+
+@media (min-width: 80rem) {
+  .container { width: 80rem; }
+}
