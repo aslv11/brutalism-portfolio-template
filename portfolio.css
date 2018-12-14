@@ -66,7 +66,7 @@ h1 {
 
 .portfolio-single-title {
   margin: 0 0 2rem;
-  font-size: 2rem; color: #f5f151; text-shadow: 2px 2px 7px #43ff8e; text-align: center;
+  font-size: 2.5rem; color: #f5f151; text-shadow: 2px 2px 7px #43ff8e; text-align: center;
 }
 
 .portfolio-single-title:first-letter {
@@ -75,7 +75,7 @@ h1 {
 
 .portfolio-single-content {
   margin: 1rem;
-  font-size: 2.5rem; color: #fff; text-align: center; text-shadow: 3px 2px 2px #333;
+  font-size: 1.9rem; color: #fff; text-align: center; text-shadow: 3px 2px 2px #333;
 }
 
 .portfolio-single-content::after {
@@ -93,7 +93,7 @@ h1 {
   h1 { left: -2.5rem; }
   .portfolio-list-item-link { font-size: 3.5rem; }
   .portfolio-single-title { font-size: 7rem; }
-  .portfolio-single-content { margin: 1rem 4rem; }
+  .portfolio-single-content { margin: 1rem 4rem; font-size: 2.5rem; }
 }
 
 @media (min-width: 80rem) {
